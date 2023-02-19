@@ -1,0 +1,87 @@
+/* FONDO PRINCIPAL*/
+body{
+    background-color: #141c2c;
+}
+
+.cuadro_formulario {
+    width: 350px;
+    height: 100%;
+    background-color: #2c3444;
+    border: 1px solid #717aa5;
+    border-radius: 4px; 
+    margin: 20px auto;
+    padding: 20px;
+
+  }
+
+  /* FORMULARIO */
+h1{
+    color: #9fa9c8;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+ .titulo_campo{
+    color: #717aa5;
+    font-size: 14px;
+    padding-bottom: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+ }
+ 
+ 
+  .rellenar {
+    width: 330px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+
+  #btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c64fc;
+    border: 2px solid #141c2c;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #btn:hover {
+    background-color: #141c2c;
+  }  
+
+  /* VALIDACIONES */
+  input:valid {
+  background-image: url(images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border: solid green;
+}
+
+input:invalid {
+  background-image: url(images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border: solid red;
+}
+
+.error {
+  color: red;
+}
+
+.error_mensaje {
+  color: red;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px;
+  display: none;
+
+}
+
+:invalid ~ .error_mensaje {
+  display: block;
+}

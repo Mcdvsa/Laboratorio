@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario - Crear cuenta</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+       
+        <div class="cuadro_formulario"><form onsubmit="return validarFormulario()">
+            <h1>Create Account</h1>
+            
+
+            <div class="titulo_campo"><label for="name">Nombre</label></div>
+            <input type="text" name="nombre" class="rellenar" id="name" pattern="^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+$" required>
+            <span class="error"></span>
+            <div class="error_mensaje">Rellene este campo</div>
+
+            <br><div class="titulo_campo"><label for="email">Email</label></div>
+            <input type="email" name="email" class="rellenar" id="email" required>
+            <span class="error"></span>
+            <div class="error_mensaje">Rellene este campo</div>
+
+            <br><div class="titulo_campo"><label for="password">Clave</label></div>
+            <input type="password" name="password" class="rellenar" id="password" minlength="8" required>
+            <span class="error"></span>
+            <small class="error_mensaje">Rellene este campo</small>
+
+            <br><div class="titulo_campo"><label for="confirmpassword">Confirme clave</label></div>
+            <input type="password" name="confirmpassword" class="rellenar" id="confirmpassword" minlength="8" required>
+            <span class="error"></span>
+            <div class="error_mensaje">Rellene este campo</div>
+
+            <button type="submit" id="btn">ENVIAR</button>
+        </form></div>
+
+
+    </body>
+</html>
